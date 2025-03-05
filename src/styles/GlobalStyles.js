@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 
 :root {
     /* Indigo */
@@ -185,3 +185,4 @@ createGlobalStyle`
   */
   
 `;
+export default GlobalStyles;
