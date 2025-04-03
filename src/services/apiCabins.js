@@ -12,6 +12,8 @@ export default async function getCabins() {
 }
 
 export async function createCabin(newCabin) {
+  const imageName = `${Math.random}`;
+
   const { data, error } = await supabase
     .from("cabins")
     .insert([newCabin])
